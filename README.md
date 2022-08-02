@@ -11,6 +11,8 @@
 
 [poc编写规范及说明要求](https://github.com/knownsec/pocsuite3/blob/master/docs/CODING.md)
 
+### 常见CMS
+
 | 序号 | poc_name                                                     | description                                         |
 | ---- | ------------------------------------------------------------ | --------------------------------------------------- |
 | 1    | [zbzcms_file_deletion.py](https://github.com/midisec/pocsuite-poc/blob/main/pocs/yccms3.4_file_deletion.py) | 南宁比优网络科技有限公司 站帮主CMS 2.1 任意文件删除 |
@@ -20,8 +22,15 @@
 | 5    | [yccms3.4_file_deletion.py](https://github.com/midisec/pocsuite-poc/blob/main/pocs/yccms3.4_file_deletion.py) | YCCMS3.4 存在任意文件删除                           |
 | 6    | [74cms_rce.py](https://github.com/midisec/pocsuite-poc/blob/main/pocs/74cms_rce.py) | 骑士cms6.0.48及以下 前台RCE getshell                |
 | 7    | [dedecms5.7.85_admin_getshell.py](https://github.com/midisec/pocsuite-poc/blob/main/pocs/dedecms5.7.85_admin_getshell.py) | dedecms5.7.85 后台getshell                          |
+|      |                                                              |                                                     |
 
+### 2022HW
 
+| 序号 | poc_name                                                     | description                                      | 时间       |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------ | ---------- |
+| 1    | [trx_behaviorsystem_rce.py](https://github.com/midisec/pocsuite-poc/blob/main/pocs/trx_behaviorsystem_rce.py) | 天融信上网行为管理系统static_convert.php命令执行 | 2022/07/28 |
+|      |                                                              |                                                  |            |
+|      |                                                              |                                                  |            |
 
 
 
