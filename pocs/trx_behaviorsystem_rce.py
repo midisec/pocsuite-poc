@@ -24,15 +24,16 @@ class DemoPOC(POCBase):
     desc = '天融信-上网行为管理系统static_convert.php命令执行漏洞'  # 漏洞简要描述
     samples = ['http://192.168.3.8']  # 测试样列，就是用 PoC 测试成功的目标
     pocDesc = '''
-    天融信上网行为管理系统static_convert.php命令执行
-    '''
-    # keyword : app="天融信-上网行为管理系统"
-
+        天融信上网行为管理系统static_convert.php命令执行
     # usage : 
-    #   pocsuite -r pocs/trx_rce.py -f urls.txt --verify
-    #   pocsuite -r pocs/trx_rce.py -f urls.txt --attack
-    #   pocsuite -r pocs/trx_rce.py -u http://192.168.3.8 --verify
-    #   pocsuite -r pocs/trx_rce.py -u http://192.168.3.8 --attack
+        pocsuite -r pocs/trx_behaviorsystem_rcee.py -f urls.txt --verify
+        pocsuite -r pocs/trx_behaviorsystem_rce.py -f urls.txt --attack
+        pocsuite -r pocs/trx_behaviorsystem_rce.py -u http://192.168.3.8 --verify
+        pocsuite -r pocs/trx_behaviorsystem_rce.py -u http://192.168.3.8 --attack
+    # keyword : 
+        app="天融信-上网行为管理系统"
+
+    '''
 
     def _options(self):
         o = OrderedDict()
