@@ -32,6 +32,7 @@
 | 2    | [yongyou_ksoa_upload_rce.py](https://github.com/midisec/pocsuite-poc/blob/main/pocs/yongyou_ksoa_upload_rce.py) | 用友时空KSOA前台文件上传漏洞导致rce              | 2022/07/28 |
 | 3    | [mingyu_login_bypass.py](https://github.com/midisec/pocsuite-poc/blob/main/pocs/mingyu_login_bypass.py) | 安恒信息-明御WAF存在登陆绕过漏洞                 | 2022/07/29 |
 | 4    | [landray_oa_rce.py](https://github.com/midisec/pocsuite-poc/blob/main/pocs/landray_oa_rce.py) | 蓝凌OA-未授权命令执行漏洞(无回显)                | 2022/08/02 |
+| 5    | [nsfocus_firewall_upload.py](https://github.com/midisec/pocsuite-poc/blob/main/pocs/nsfocus_firewall_upload.py) | 绿盟-下一代防火墙resourse.php任意文件上传漏洞    | 2022/08/04 |
 |      |                                                              |                                                  |            |
 
 
